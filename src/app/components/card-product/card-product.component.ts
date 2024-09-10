@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card-product',
@@ -11,7 +12,7 @@ export class CardProductComponent implements OnInit{
 cantidad: number = 0;
 
 //Inicio objeto de producto.
-product = {
+@Input() product  = {
   name: 'Bike',
   price: 120,
   description: 'Product Description',
